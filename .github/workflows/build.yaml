@@ -1,0 +1,16 @@
+name: Build NodeJS app
+
+on:
+  push:
+    branches:
+        - main
+
+jobs: 
+    test:
+        runs-on: ubuntu-latest
+        steps:
+          - name: Clonando repo de github
+            uses: actions/checkout@v5
+
+          - name: Mostrar contenido de index.js
+            run: cat index.js

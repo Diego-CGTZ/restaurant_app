@@ -1,0 +1,15 @@
+services:
+  712api:
+
+  db:
+    image: mysql
+    container_name: MySQLDB
+    enviroment:
+      - MYSQL_ROOT_PASSWORD=diego123
+    volumes:
+      - db_mysql2:/var/lib/mysql
+    ports:
+      - 3300:3306
+
+volumes:
+  db_mysql:
