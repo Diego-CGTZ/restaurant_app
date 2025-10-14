@@ -12,13 +12,8 @@ jobs:
           - name: Clonando repo de github
             uses: actions/checkout@v5
 
-          - name: Configurando Node.js
-            uses: actions/setup-node@v4
-            with:
-              node-version: '20'
+          - name: Mostrar contenido de index.js
+            run: cat index.js
 
-          - name: Instalando dependencias
-            run: npm ci
-
-          - name: Corriendo pruebas
+          - name: Correr pruebas
             run: npm run test
