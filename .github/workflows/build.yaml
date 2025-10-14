@@ -1,5 +1,5 @@
 name: Build NodeJS app
-
+ 
 on:
   push:
     branches:
@@ -12,5 +12,5 @@ jobs:
           - name: Clonando repo de github
             uses: actions/checkout@v5
 
-          - name: Mostrar contenido de index.js
-            run: cat index.js
+          - name: Corriendo pruebas
+            run: npm run test
