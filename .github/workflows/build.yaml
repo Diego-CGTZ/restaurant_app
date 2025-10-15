@@ -15,5 +15,8 @@ jobs:
           - name: Mostrar contenido de index.js
             run: cat index.js
 
+          - name: Instalar dependencias
+            run: npm install
+
           - name: Correr pruebas
             run: npm run test
